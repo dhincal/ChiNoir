@@ -1,7 +1,13 @@
+"use client";
+
 import { FILE } from "dns/promises";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function HowToPlay() {
+  const router = useRouter();
   return (
     <div className="relative max-w-2xl w-full bg-[#e8dcc2] text-zinc-900 p-10 rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.7)] mx-auto mt-20">
       <div className="absolute -top-6 left-8 bg-[#d6c7a5] px-6 py-2 text-sm tracking-widest shadow-md">
@@ -16,7 +22,7 @@ export default function HowToPlay() {
         <div>
           <h2 className="font-bold tracking-wider">CLUES ARE IMPORTANT</h2>
           <p>
-            Listen carefully to every testimony. Truth often hides between
+            Listen carefully to every information. Truth often hides between
             words.
           </p>
         </div>
@@ -35,6 +41,15 @@ export default function HowToPlay() {
       </div>
       <div className="mt-10 text-center">
         <Link
+          onClick={async (e) => {
+            e.preventDefault();
+            const body = document.querySelector("body");
+            body?.classList.add("pageTransition");
+            await delay(1000);
+            router.push("/");
+            await delay(500);
+            body?.classList.remove("pageTransition");
+          }}
           href="/"
           className="px-8 py-3 bg-zinc-900 text-white tracking-widest hover:bg-black transition cursor-pointer rounded-md shadow-[0_0_8px_rgba(0,0,0,0.25)] hover:shadow-[0_0_18px_rgba(0,0,0,0.7)]"
         >

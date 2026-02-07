@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-white mb-4 heroText">
             Welcome to Chi-Noir
           </h1>
-          <p className="text-lg text-white">
+          <p className="text-lg text-white heroText">
             Are you ready to solve the mystery and uncover the truth?
           </p>
           <Link
@@ -44,17 +44,35 @@ export default function Home() {
             Start Your Adventure
           </Link>
           <Link
+            onClick={async (e) => {
+              e.preventDefault();
+              const body = document.querySelector("body");
+              body?.classList.add("pageTransition");
+              await delay(1000);
+              router.push("/how-to-play");
+              await delay(500);
+              body?.classList.remove("pageTransition");
+            }}
             href="/how-to-play"
             className="mb-5 px-8 py-3 w-64 text-white uppercase tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 hover:border-white hover:shadow-[0_0_18px_rgba(255,255,255,0.7)] hover:text-white"
           >
             How To Play
           </Link>
-          <Link
+          {/* <Link
+            onClick={async (e) => {
+              e.preventDefault();
+              const body = document.querySelector("body");
+              body?.classList.add("pageTransition");
+              await delay(1000);
+              router.push("/credits");
+              await delay(500);
+              body?.classList.remove("pageTransition");
+            }}
             href="/credits"
             className="mb-5 px-8 py-3 w-64 text-white uppercase tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 hover:border-white hover:shadow-[0_0_18px_rgba(255,255,255,0.7)] hover:text-white"
           >
             Credits
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
