@@ -46,7 +46,7 @@ export default function MessageBox({
           className="absolute left-0 top-1/2 -translate-y-4/4 w-48"
           style={{ zIndex: -5 }}
         />
-        <div className="flex flex-col z-10 p-5 bg-gray-800 bg-opacity-70 rounded-lg">
+        <div className="flex flex-col z-10 p-5 tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300">
           <p id="messageBox" className="text-lg">
             {messages[currentMessageIndex]}
           </p>

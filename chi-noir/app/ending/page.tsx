@@ -126,11 +126,11 @@ export default function Ending() {
             married={false}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
+            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
               Choose This Suspect
             </button>
             <button
-              className="bg-black text-white px-4 py-2 rounded-lg cursor-pointer hover:text-black hover:bg-white transition duration-300"
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-white uppercase tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 hover:border-white hover:shadow-[0_0_18px_rgba(255,255,255,0.7)] hover:text-white"
               onClick={() => {
                 delay(500).then(() =>
                   document
@@ -172,11 +172,11 @@ export default function Ending() {
             married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
+            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
               Choose This Suspect
             </button>
             <button
-              className="bg-black text-white px-4 py-2 rounded-lg cursor-pointer hover:text-black hover:bg-white transition duration-300"
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-white uppercase tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 hover:border-white hover:shadow-[0_0_18px_rgba(255,255,255,0.7)] hover:text-white"
               onClick={() => {
                 delay(500).then(() =>
                   document
@@ -222,11 +222,11 @@ export default function Ending() {
             married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
+            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
               Choose This Suspect
             </button>
             <button
-              className="bg-black text-white px-4 py-2 rounded-lg cursor-pointer hover:text-black hover:bg-white transition duration-300"
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-white uppercase tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 hover:border-white hover:shadow-[0_0_18px_rgba(255,255,255,0.7)] hover:text-white"
               onClick={() => {
                 delay(500).then(() =>
                   document
@@ -271,11 +271,11 @@ export default function Ending() {
             married={false}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
+            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
               Choose This Suspect
             </button>
             <button
-              className="bg-black text-white px-4 py-2 rounded-lg cursor-pointer hover:text-black hover:bg-white transition duration-300"
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-white uppercase tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 hover:border-white hover:shadow-[0_0_18px_rgba(255,255,255,0.7)] hover:text-white"
               onClick={() => {
                 delay(500).then(() =>
                   document

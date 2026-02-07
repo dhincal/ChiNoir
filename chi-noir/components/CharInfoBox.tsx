@@ -25,7 +25,7 @@ export default function CharInfoBox({
 }) {
   return (
     <div
-      className={`bg-gray-800 bg-opacity-75 rounded-lg p-4 w-full max-w-md ${className}`}
+      className={`tracking-widest text-sm border border-white/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(255,255,255,0.25)] transition-all duration-300 p-4 w-full max-w-md ${className}`}
     >
       <h2 className="text-2xl font-bold mb-2">{name}</h2>
       <p className="text-gray-300">{description}</p>
