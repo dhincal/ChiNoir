@@ -1,5 +1,8 @@
 "use client";
 
+import { VolumeX } from "lucide-react";
+import { Volume2 } from "lucide-react";
+
 import { createContext, useContext, useState } from "react";
 
 const MusicProviderContext = createContext<{
@@ -19,6 +22,9 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
 
   return (
     <MusicProviderContext.Provider value={{ isMusicOn, toggleMusic }}>
+      <div onClick={toggleMusic}>
+        {isMusicOn ? <Volume2></Volume2> : <VolumeX></VolumeX>}
+      </div>
       {children}
     </MusicProviderContext.Provider>
   );
