@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.sceneViginette {
+  box-shadow: 0px 0px 400px 43px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: 0px 0px 400px 43px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 0px 0px 400px 43px rgba(0, 0, 0, 1) inset;
+}
