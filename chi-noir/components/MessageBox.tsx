@@ -7,9 +7,11 @@ import ActionButton from "./ActionButton";
 
 export default function MessageBox({
   messages,
+  actionNames,
   actionHrefs,
 }: Readonly<{
   messages: string[];
+  actionNames: string[];
   actionHrefs?: Function[];
 }>) {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
@@ -49,18 +51,13 @@ export default function MessageBox({
         <div
           className={`transition-all flex flex-row justify-between gap-x-5 mt-5 duration-300 ${showActionButtons ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         >
-          <ActionButton
-            label="Check Body"
-            onClick={() => (actionHrefs ? actionHrefs[0]() : null)}
-          />
-          <ActionButton
-            label="Check Logs"
-            onClick={() => (actionHrefs ? actionHrefs[1]() : null)}
-          />
-          <ActionButton
-            label="Check Railway"
-            onClick={() => (actionHrefs ? actionHrefs[2]() : null)}
-          />
+          {actionNames.map((name, index) => (
+            <ActionButton
+              key={index}
+              label={name}
+              onClick={() => (actionHrefs ? actionHrefs[index]() : null)}
+            />
+          ))}
         </div>
       </div>
     </div>
