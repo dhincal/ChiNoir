@@ -3,6 +3,11 @@
 import JohnBummerArrest from "@/public/Ending/Arrest/JohnBummerArrest.png";
 import JohnBummerUpper from "@/public/Ending/Characters/JohnBummerUpper.png";
 import ZoeSmithArrest from "@/public/Ending/Arrest/ZoeSmithArrest.png";
+import ZoeSmithUpper from "@/public/Ending/Characters/ZoeSmithUpper.png";
+import RebeccaArrest from "@/public/Ending/Arrest/RebeccaArrest.png";
+import RebeccaUpper from "@/public/Ending/Characters/RebeccaBottomUpper.png";
+import AlexJamesArrest from "@/public/Ending/Arrest/AlexJamesArrest.png";
+import AlexJamesUpper from "@/public/Ending/Characters/AlexJamesUpper.png";
 
 import { useParams } from "next/navigation";
 import Image from "next/image";
@@ -53,5 +58,82 @@ export default function Arrest() {
       "But it is too late isn't it? See you on the other side, Detective.",
     ];
     arrestImage = ZoeSmithArrest;
+    return (
+      <div>
+        <div
+          id="ArrestScene"
+          className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative`}
+          style={{
+            backgroundImage: `url(${ZoeSmithArrest.src})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "top",
+          }}
+        >
+          <MessageBox
+            messages={arrestMessages}
+            actionNames={sceneActions}
+            actionHrefs={actionEvents}
+            customImage={ZoeSmithUpper.src}
+          />
+        </div>
+      </div>
+    );
+  } else if (slug === "rebecca") {
+    arrestMessages = [
+      "Okay Detective, you got me. I killed Jackob. But you will never understand why. You will never understand what he did to me. He deserved it. He deserved everything that is coming to him.",
+      "He has lied to me, to his own wife, I have lived my whole life for a lie.",
+    ];
+
+    return (
+      <div>
+        <div
+          id="ArrestScene"
+          className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative`}
+          style={{
+            backgroundImage: `url(${RebeccaArrest.src})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "top",
+          }}
+        >
+          <MessageBox
+            messages={arrestMessages}
+            actionNames={sceneActions}
+            actionHrefs={actionEvents}
+            customImage={RebeccaUpper.src}
+          />
+        </div>
+      </div>
+    );
+  } else if (slug === "alex") {
+    arrestMessages = [
+      "I didn't mean to do it. It was an accident. Jackob was going to ruin everything. I had to stop him.",
+      "I was at the office all night. You can check with my assistant. She will tell you that I was working late.",
+      "But it is too late isn't it? See you on the other side, Detective.",
+    ];
+    arrestImage = AlexJamesArrest;
+
+    return (
+      <div>
+        <div
+          id="ArrestScene"
+          className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative`}
+          style={{
+            backgroundImage: `url(${AlexJamesArrest.src})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "top",
+          }}
+        >
+          <MessageBox
+            messages={arrestMessages}
+            actionNames={sceneActions}
+            actionHrefs={actionEvents}
+            customImage={AlexJamesUpper.src}
+          />
+        </div>
+      </div>
+    );
   }
 }
