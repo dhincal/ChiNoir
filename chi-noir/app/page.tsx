@@ -21,7 +21,7 @@ export default function Home() {
             Your gateway to the world of noir mysteries.
           </p>
           <Link
-            href="/scene1"
+            href="/intro"
             className="mt-6 px-4 py-2 bg-white text-black rounded-xl hover:bg-red-900 transition"
           >
             Start Your Adventure

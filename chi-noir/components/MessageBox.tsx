@@ -2,17 +2,21 @@
 
 import Image from "next/image";
 import Cop from "@/public/Komser.png";
+import PhoneCop from "@/public/KomserTelefonda.png";
 import { useEffect, useState } from "react";
 import ActionButton from "./ActionButton";
+import { on } from "events";
 
 export default function MessageBox({
   messages,
   actionNames,
   actionHrefs,
+  onPhoneCall = false,
 }: Readonly<{
   messages: string[];
   actionNames: string[];
   actionHrefs?: Function[];
+  onPhoneCall?: boolean;
 }>) {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   const [showActionButtons, setShowActionButtons] = useState(false);
@@ -37,7 +41,7 @@ export default function MessageBox({
     >
       <div className="relative z-20">
         <Image
-          src={Cop}
+          src={onPhoneCall ? PhoneCop : Cop}
           alt="Cop"
           className="absolute left-0 top-1/2 -translate-y-4/4 w-40"
           style={{ zIndex: -5 }}

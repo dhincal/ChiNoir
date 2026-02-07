@@ -4,6 +4,7 @@ import MessageBox from "@/components/MessageBox";
 import LaSelleStationImg from "@/public/Scene1/LaSelleStation.png";
 import CheckLogsBg from "@/public/Scene1/CheckLogsBg.png";
 import CheckRailwayBg from "@/public/Scene1/CheckRailwayBg.png";
+import CheckBodyBg from "@/public/Scene1/CheckBodyBg.png";
 import { useEffect, useState } from "react";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -55,6 +56,32 @@ export default function Scene1() {
   ];
 
   let sceneActions: string[] = ["Check Body", "Check Logs", "Check Railway"];
+
+  let bodyMessages: string[] = [
+    "Upon examining the body, we can see that Jackob was shot at close range, and there are traces of gunpowder on his hands.",
+    "This suggests that he might have been involved in a struggle with the assailant, or he might have been the one who fired the gun.",
+    "We also found a torn piece of fabric in his hand, which could be a crucial piece of evidence.",
+  ];
+  let bodyActions: string[] = ["Back to Scene"];
+  let bodyActionEvents: Function[] = [
+    () => {
+      if (numberOfActionsCompleted >= 2) {
+        setEndScene(true);
+        delay(500).then(() =>
+          document
+
+            .getElementById("EndingScene")
+            ?.scrollIntoView({ behavior: "smooth" }),
+        );
+        return;
+      }
+      delay(500).then(() =>
+        document
+          .getElementById("TrainScene")
+          ?.scrollIntoView({ behavior: "smooth" }),
+      );
+    },
+  ];
 
   let logsMessages: string[] = [
     "This is how the logs are looking like, we can see that there was a gunshot sound detected at 2:15 AM, and there were some unusual activities around that time.",
@@ -143,16 +170,16 @@ export default function Scene1() {
         id="BodyCheck"
         className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative ${checkedBody ? "" : "hidden"}`}
         style={{
-          backgroundImage: `url(${LaSelleStationImg.src})`,
+          backgroundImage: `url(${CheckBodyBg.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <MessageBox
-          messages={sceneMessages}
-          actionNames={sceneActions}
-          actionHrefs={actionEvents}
+          messages={bodyMessages}
+          actionNames={bodyActions}
+          actionHrefs={bodyActionEvents}
         />
       </div>
       <div
