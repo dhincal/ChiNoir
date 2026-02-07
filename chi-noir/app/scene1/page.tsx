@@ -141,16 +141,6 @@ export default function Scene1() {
   let endSceneActions: string[] = ["Go Home"];
   let endSceneActionEvents: Function[] = [() => router.push("/dayBreak")];
 
-  useEffect(() => {
-    if (checkedBody && checkedLogs && checkedRailway) {
-      // All actions completed, proceed to next scene or show a message
-      alert(
-        "Great work, Detective! You've gathered all the evidence. Let's move on to the next scene.",
-      );
-      // Here you can navigate to the next scene or reset the state for another investigation
-    }
-  }, [checkedBody, checkedLogs, checkedRailway]);
-
   return (
     <div>
       <div
