@@ -51,17 +51,19 @@ export default function Scene2() {
   ];
 
   let sceneMessages: string[] = [
-    "Welcome to Laselle Stop, Detective. This is the scene of the crime.",
-    "We have found out that the victim was a local bouncer named Jackob who works at Rex Lounge.",
-    "He was found dead here under the staircase, with a gunshot wound to the chest.",
-    "We only have time before the media arrives, so we need to gather as much evidence as possible.",
-    "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate first.",
+    "Welcome back, Detective. This house is where Viktor Bottom has been killed.",
+    "We need to investigate the crime scene further to gather more evidence and find out who the culprit is.",
+    "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate.",
   ];
 
-  let sceneActions: string[] = ["Check Body", "Check Logs", "Check Railway"];
+  let sceneActions: string[] = [
+    "Check Body",
+    "Check Bathroom",
+    "Check Kitchen",
+  ];
 
   let bodyMessages: string[] = [
-    "Upon examining the body, we can see that Jackob was shot at close range, and there are traces of gunpowder on his hands.",
+    "Upon examining the body, we can see that  was shot at close range, and there are traces of gunpowder on his hands.",
     "This suggests that he might have been involved in a struggle with the assailant, or he might have been the one who fired the gun.",
     "We also found a torn piece of fabric in his hand, which could be a crucial piece of evidence.",
   ];
@@ -80,18 +82,18 @@ export default function Scene2() {
       }
       delay(500).then(() =>
         document
-          .getElementById("TrainScene")
+          .getElementById("HouseScene")
           ?.scrollIntoView({ behavior: "smooth" }),
       );
     },
   ];
 
-  let logsMessages: string[] = [
+  let bathroomMessages: string[] = [
     "This is how the logs are looking like, we can see that there was a gunshot sound detected at 2:15 AM, and there were some unusual activities around that time.",
     "We can also see that there were some people who were around the area at that time, but we need to investigate further to find out who they are.",
   ];
-  let logsActions: string[] = ["Back to Scene"];
-  let logsActionEvents: Function[] = [
+  let bathroomActions: string[] = ["Back to Scene"];
+  let bathroomActionEvents: Function[] = [
     () => {
       if (numberOfActionsCompleted >= 2) {
         setEndScene(true);
@@ -104,18 +106,18 @@ export default function Scene2() {
       }
       delay(500).then(() =>
         document
-          .getElementById("TrainScene")
+          .getElementById("HouseScene")
           ?.scrollIntoView({ behavior: "smooth" }),
       );
     },
   ];
 
-  let railwayMessages: string[] = [
-    "The railway surveillance footage shows a suspicious individual wearing a hoodie and sunglasses, who was seen near the crime scene around the time of the murder.",
+  let kitchenMessages: string[] = [
+    "The kitchen surveillance footage shows a suspicious individual wearing a hoodie and sunglasses, who was seen near the crime scene around the time of the murder.",
     "We need to analyze this footage carefully to identify the suspect and gather more evidence.",
   ];
-  let railwayActions: string[] = ["Back to Scene"];
-  let railwayActionEvents: Function[] = [
+  let kitchenActions: string[] = ["Back to Scene"];
+  let kitchenActionEvents: Function[] = [
     () => {
       if (numberOfActionsCompleted >= 2) {
         setEndScene(true);
@@ -128,7 +130,7 @@ export default function Scene2() {
       }
       delay(500).then(() =>
         document
-          .getElementById("TrainScene")
+          .getElementById("HouseScene")
           ?.scrollIntoView({ behavior: "smooth" }),
       );
     },
@@ -144,7 +146,7 @@ export default function Scene2() {
   return (
     <div>
       <div
-        id="TrainScene"
+        id="HouseScene"
         className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative ${endScene ? "hidden" : ""}`}
         style={{
           backgroundImage: `url(${OutsideHouse.src})`,
@@ -176,7 +178,7 @@ export default function Scene2() {
         />
       </div>
       <div
-        id="LogsCheck"
+        id="BathroomCheck"
         className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative ${checkedBathroom ? "" : "hidden"}`}
         style={{
           backgroundImage: `url(${CheckBathroomBg.src})`,
@@ -186,13 +188,13 @@ export default function Scene2() {
         }}
       >
         <MessageBox
-          messages={logsMessages}
-          actionNames={logsActions}
-          actionHrefs={logsActionEvents}
+          messages={bathroomMessages}
+          actionNames={bathroomActions}
+          actionHrefs={bathroomActionEvents}
         />
       </div>
       <div
-        id="RailwayCheck"
+        id="KitchenCheck"
         className={`flex min-h-screen items-center justify-center font-sans sceneViginette relative ${checkedKitchen ? "" : "hidden"}`}
         style={{
           backgroundImage: `url(${CheckKitchenBg.src})`,
@@ -202,9 +204,9 @@ export default function Scene2() {
         }}
       >
         <MessageBox
-          messages={railwayMessages}
-          actionNames={railwayActions}
-          actionHrefs={railwayActionEvents}
+          messages={kitchenMessages}
+          actionNames={kitchenActions}
+          actionHrefs={kitchenActionEvents}
         />
       </div>
       <div
