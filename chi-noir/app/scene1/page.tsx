@@ -6,10 +6,13 @@ import CheckLogsBg from "@/public/Scene1/CheckLogsBg.png";
 import CheckRailwayBg from "@/public/Scene1/CheckRailwayBg.png";
 import CheckBodyBg from "@/public/Scene1/CheckBodyBg.png";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function Scene1() {
+  const router = useRouter();
+
   const [checkedBody, setCheckedBody] = useState(false);
   const [checkedLogs, setCheckedLogs] = useState(false);
   const [checkedRailway, setCheckedRailway] = useState(false);
@@ -136,7 +139,7 @@ export default function Scene1() {
     "Let's leave before media gets all up in our business.",
   ];
   let endSceneActions: string[] = ["Go Home"];
-  let endSceneActionEvents: Function[] = [() => alert("Go home")];
+  let endSceneActionEvents: Function[] = [() => router.push("/dayBreak")];
 
   useEffect(() => {
     if (checkedBody && checkedLogs && checkedRailway) {

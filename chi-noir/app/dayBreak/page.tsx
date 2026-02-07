@@ -9,9 +9,9 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function Scene1() {
   let sceneMessages: string[] = [
-    "Good evening, Detective. Apologies for calling you at this hour, but we have a situation that requires your expertise.",
-    "We have a homicide case that just came in, and we need you to head to the crime scene immediately.",
-    "The crime scene is at Laselle Station, a local train stop.",
+    "Sorry to botheryou at this hour again detective, but we have a new case that just came in.",
+    "We think it might be related to the one you are currently investigating, so we need you to head to the crime scene immediately.",
+    "It is at Lincoln Park, I will meet you there.",
   ];
 
   const router = useRouter();
@@ -21,7 +21,7 @@ export default function Scene1() {
   let actionEvents: Function[] = [() => handleActionClick()];
 
   function handleActionClick() {
-    router.push("/scene1");
+    router.push("/scene2");
   }
 
   return (
