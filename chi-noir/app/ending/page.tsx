@@ -18,9 +18,9 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function Ending() {
   let sceneMessages: string[] = [
-    "Okay Detective, we have gathered enough evidence and interrogated all the suspects. It's time to piece everything together and solve the case.",
+    "Okay Detective, we have gathered a lot of evidence and information about the case.",
     "With the evidence we have colllected, we chose four suspects to inspect.",
-    "Let's inspect each of them and see if we can find any inconsistencies in their stories or any evidence that points to the culprit.",
+    "Let's inspect each of them and see if we can find any information that can help us connect the dots.",
   ];
   let sceneActions: string[] = [
     "John Bummer",
@@ -116,11 +116,11 @@ export default function Ending() {
           <CharInfoBox
             className="w-full"
             name="John Bummer"
-            description="Description of John Bummer"
+            description="Regular at Rex Lounge, known for his heavy drinking and aggressive behavior. He has a history of bar fights and has been banned from several establishments in the past. He is currently unemployed and has no known source of income."
             occupancy="Unemployed"
             gunLicense={false}
             height="175 cm"
-            weight="100 kg"
+            weight="60 kg"
             alcoholLevel="High"
             salary="$0"
             married={false}
@@ -211,7 +211,7 @@ export default function Ending() {
           <CharInfoBox
             className="w-full"
             name="Rebecca Bottom"
-            description="Description of Rebecca Bottom"
+            description="Wife of Viktor Bottom. She works as a marketing specialist at a local firm. She does not have a history of criminal records other than traffic tickets, and we did not stumble on any alcohol or drug usage in her blood. She does not have a gun license and does not own any firearms legally."
             occupancy="Marketing Specialist"
             gunLicense={false}
             height="160 cm"
@@ -261,14 +261,14 @@ export default function Ending() {
           <CharInfoBox
             className="w-full"
             name="Alex James"
-            description="Description of Alex James"
-            occupancy="Bouncer at Rex Lounge"
+            description="Tall and muscular, Alex works as a bouncer at Rex Lounge. He has a history of minor altercations but no serious criminal record. He has a gun license but does not own a firearm on the records. He is currently single and has no children."
+            occupancy="Bouncer"
             gunLicense={true}
             height="190 cm"
             weight="100 kg"
             alcoholLevel="Low"
             salary="$20,000/yr"
-            married={true}
+            married={false}
           />
           <div className="flex flex-row gap-x-4 mt-4">
             <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">

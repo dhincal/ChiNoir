@@ -51,19 +51,19 @@ export default function Scene1() {
   ];
 
   let sceneMessages: string[] = [
-    "Welcome to Laselle Stop, Detective. This is the scene of the crime.",
+    "Welcome to Laselle Stop, Detective, the scene of the crime.",
     "We have found out that the victim was a local bouncer named Jackob who works at Rex Lounge.",
     "He was found dead here under the staircase, with a gunshot wound to the chest.",
-    "We only have time before the media arrives, so we need to gather as much evidence as possible.",
-    "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate first.",
+    "We do not have much time before the media arrives, so we need to be quick and gather as much evidence as possible.",
+    "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate.",
   ];
 
   let sceneActions: string[] = ["Check Body", "Check Logs", "Check Railway"];
 
   let bodyMessages: string[] = [
-    "Upon examining the body, we can see that Jackob was shot at close range, and there are traces of gunpowder on his hands.",
-    "This suggests that he might have been involved in a struggle with the assailant, or he might have been the one who fired the gun.",
-    "We also found a torn piece of fabric in his hand, which could be a crucial piece of evidence.",
+    "Upon examining the body, we can see that Jakob was shot at close range, with a small caliber handgun. The gunshot wound is consistent with a single shot fired from a distance of less than 2 feet.",
+    "Other than the signs of murder, we found a ginger man's photograph in his wallet, seems like a romantic interest.",
+    "We also found a tuft of brown hair on his clothes, this either might be from the perpetrator, or from a random woman in the club.",
   ];
   let bodyActions: string[] = ["Back to Scene"];
   let bodyActionEvents: Function[] = [
@@ -87,8 +87,9 @@ export default function Scene1() {
   ];
 
   let logsMessages: string[] = [
-    "This is how the logs are looking like, we can see that there was a gunshot sound detected at 2:15 AM, and there were some unusual activities around that time.",
-    "We can also see that there were some people who were around the area at that time, but we need to investigate further to find out who they are.",
+    "As we look at the logs, between 1 A.M. and 6 A.M. there were not so many people coming in or out.",
+    "Only thing that interests me is an entry made by John Bummer at around 3 A.M., he has a long criminal record, mostly for drug abuse and petty theft, but he has been known to be violent when under influence.",
+    "I don't think there is any other useful information in the logs, at least more than we have anyways.",
   ];
   let logsActions: string[] = ["Back to Scene"];
   let logsActionEvents: Function[] = [
@@ -111,8 +112,9 @@ export default function Scene1() {
   ];
 
   let railwayMessages: string[] = [
-    "The railway surveillance footage shows a suspicious individual wearing a hoodie and sunglasses, who was seen near the crime scene around the time of the murder.",
-    "We need to analyze this footage carefully to identify the suspect and gather more evidence.",
+    "After cheking the inside the railway, we found 9mm shell casings, which matches the caliber of the gunshot wound on the victim.",
+    "Other than that, we found a receipt from Rex Lounge, the club where the victim works, for a purchase made at around 2:00 A.M., which is around the time of the murder.",
+    "Alos even though it serves alcohol this person did not order alcohol, just a regular Can of Pepsi.",
   ];
   let railwayActions: string[] = ["Back to Scene"];
   let railwayActionEvents: Function[] = [

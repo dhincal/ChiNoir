@@ -9,9 +9,9 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function Scene1() {
   let sceneMessages: string[] = [
-    "Sorry to botheryou at this hour again detective, but we have a new case that just came in.",
-    "We think it might be related to the one you are currently investigating, so we need you to head to the crime scene immediately.",
-    "It is at Lincoln Park, I will meet you there.",
+    "Apologies for bothering you at this late time again detective, but we have a new case that just came in.",
+    "We think it might be related to the one you are currently investigating, so this is a good chance to gather more evidence.",
+    "The victim is murdered in his place. It is at Lincoln Park, I will meet you there.",
   ];
 
   const router = useRouter();

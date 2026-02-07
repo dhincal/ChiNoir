@@ -36,14 +36,14 @@ export default function MessageBox({
   return (
     <div
       style={{ zIndex: 5 }}
-      className="absolute bottom-1/6 left-1/2 transform -translate-x-1/2  text-white p-6 rounded-lg min-w-2xl max-w-6xl cursor-pointer"
+      className="absolute bottom-1/6 left-1/2 transform -translate-x-1/2  text-white p-6 rounded-lg min-w-2xl max-w-6xl cursor-pointer select-none"
       onClick={handleClick}
     >
       <div className="relative z-20">
         <Image
           src={onPhoneCall ? PhoneCop : Cop}
           alt="Cop"
-          className="absolute left-0 top-1/2 -translate-y-4/4 w-40"
+          className="absolute left-0 top-1/2 -translate-y-4/4 w-48"
           style={{ zIndex: -5 }}
         />
         <div className="flex flex-col z-10 p-5 bg-gray-800 bg-opacity-70 rounded-lg">

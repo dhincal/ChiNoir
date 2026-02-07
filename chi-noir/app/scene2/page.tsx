@@ -51,8 +51,9 @@ export default function Scene2() {
   ];
 
   let sceneMessages: string[] = [
-    "Welcome back, Detective. This house is where Viktor Bottom has been killed.",
-    "We need to investigate the crime scene further to gather more evidence and find out who the culprit is.",
+    "Welcome back, Detective. This is the house of the victim, Jackob Bottom. He was found murdered here this morning.",
+    "There is no sign of forced entry, which suggests that the perpetrator might have been someone he knows, or someone who has a key to the house.",
+    "Feds think that this is a double homicide case, so we need to investigate the house quickly and find the perpetrator before they take the case from us. Again...",
     "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate.",
   ];
 
@@ -63,9 +64,11 @@ export default function Scene2() {
   ];
 
   let bodyMessages: string[] = [
-    "Upon examining the body, we can see that  was shot at close range, and there are traces of gunpowder on his hands.",
-    "This suggests that he might have been involved in a struggle with the assailant, or he might have been the one who fired the gun.",
-    "We also found a torn piece of fabric in his hand, which could be a crucial piece of evidence.",
+    "After looking at the body we can see that Jackob has died by hitting his head really hard on the nightstand, which caused a severe brain hemorrhage.",
+    "I am pretty sure that he is the man who was in the photograph we found in the previous crime scene, the ginger man.",
+    "There are also some bruises on his arms and legs, which suggests that he might have been involved in a struggle with the assailant.",
+    "We found his diary in his room, and it seems like he has a relationship with the previous victim.",
+    "He is married to Rebecca Bottom, can this be a love triangle gone wrong?",
   ];
   let bodyActions: string[] = ["Back to Scene"];
   let bodyActionEvents: Function[] = [
@@ -89,8 +92,9 @@ export default function Scene2() {
   ];
 
   let bathroomMessages: string[] = [
-    "This is how the logs are looking like, we can see that there was a gunshot sound detected at 2:15 AM, and there were some unusual activities around that time.",
-    "We can also see that there were some people who were around the area at that time, but we need to investigate further to find out who they are.",
+    "Bathroom is pretty clean, there is no sign of struggle or any other things that bats my eye.",
+    "But we did found a pregnancy test in the trash can, and it is positive.",
+    "I am not sure if we should trust the results, since it is a really cheap one, but it might still be useful information.",
   ];
   let bathroomActions: string[] = ["Back to Scene"];
   let bathroomActionEvents: Function[] = [
@@ -113,8 +117,11 @@ export default function Scene2() {
   ];
 
   let kitchenMessages: string[] = [
-    "The kitchen surveillance footage shows a suspicious individual wearing a hoodie and sunglasses, who was seen near the crime scene around the time of the murder.",
-    "We need to analyze this footage carefully to identify the suspect and gather more evidence.",
+    "In the kitchen, we can see harsh signs of struggle, there are broken dishes and overturned furniture.",
+    "There is no signs of any blood here, which suggests that the struggle might have happened in another room, and the perpetrator just threw the dishes to make it look like there was a struggle in the kitchen.",
+    "We also found a really nice bottle of Scotch whiskey on the counter, and it is half empty, seems like the victim was drinking before the murder.",
+    "Next to the Scotch Bottle we found a Pepsi Can, with a hint of lipstick on it. No one would say no to this fine bottle of Scotch.",
+    "Unless they want to stay away from alcohol...",
   ];
   let kitchenActions: string[] = ["Back to Scene"];
   let kitchenActionEvents: Function[] = [
@@ -137,10 +144,11 @@ export default function Scene2() {
   ];
 
   let endSceneMessages: string[] = [
-    "Great work, Detective! We have gathered enough intel for now.",
-    "Let's leave before media gets all up in our business.",
+    "I believe we gathered enough intel to point some fingers.",
+    "Let's go to the station, and inspect the suspects we have gathered evidence against.",
+    "It's time to finish this case once and for all.",
   ];
-  let endSceneActions: string[] = ["Go Home"];
+  let endSceneActions: string[] = ["Go to Station"];
   let endSceneActionEvents: Function[] = [
     async () => {
       const body = document.querySelector("body");
