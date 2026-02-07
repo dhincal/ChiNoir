@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-white mb-4 heroText">
             Welcome to Chi-Noir
           </h1>
-          <p className="text-lg text-white heroText">
+          <p className="text-2xl font-bold text-white heroText">
             Are you ready to solve the mystery and uncover the truth?
           </p>
           <Link

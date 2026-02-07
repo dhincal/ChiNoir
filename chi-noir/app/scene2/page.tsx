@@ -155,7 +155,7 @@ export default function Scene2() {
       body?.classList.add("pageTransition");
       await delay(1000);
       router.push("/ending");
-      await delay(500);
+      await delay(1000);
       body?.classList.remove("pageTransition");
     },
   ];
