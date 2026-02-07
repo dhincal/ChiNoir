@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroImage from "@/public/heroImage.jpg";
+import HeroPic from "@/public/HeroPic.png";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center dark:bg-black">
       <div className="relative w-screen h-screen">
         <Image
-          src={HeroImage}
+          src={HeroPic}
           alt="Hero Image"
           className="rounded-lg shadow-lg"
           fill
