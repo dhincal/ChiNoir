@@ -33,6 +33,7 @@ export default function Ending() {
           backgroundPosition: "center",
         }}
       >
+        <div className="absolute -z-10 flex flex-col items-center justify-between h-full w-full px-20 py-10"></div>
         <MessageBox
           messages={sceneMessages}
           actionNames={sceneActions}
