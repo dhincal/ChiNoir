@@ -54,7 +54,16 @@ export default function MessageBox({
           <p id="messageBox" className="text-lg">
             {messages[currentMessageIndex]}
           </p>
-          <p className="text-sm text-gray-400 mt-2">Click to continue...</p>
+          <p
+            className={`text-sm text-gray-400 mt-2 ${currentMessageIndex === messages.length - 1 ? "hidden" : ""}`}
+          >
+            Click to continue...
+          </p>
+          <p
+            className={`text-sm text-gray-400 mt-2 ${currentMessageIndex === messages.length - 1 ? "" : "hidden"}`}
+          >
+            Select an action below.
+          </p>
         </div>
         <div
           className={`transition-all flex flex-row justify-between gap-x-5 max-w-full mt-5 duration-300 ${showActionButtons ? "opacity-100" : "opacity-0 pointer-events-none"}`}
