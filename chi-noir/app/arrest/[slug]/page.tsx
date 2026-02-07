@@ -93,10 +93,10 @@ export default function Arrest() {
     );
   } else if (slug === "rebecca") {
     arrestMessages = [
-      "Okay Detective, you got me. I killed Jakob. But you will never understand why.",
+      "Okay Detective, you got me. I killed Jacob. But you will never understand why.",
       "He took my husband away from me. He is dead because of him. He is dead because of his lies.",
       "I loved my husband, my dearest Viktor. I didn't want to hurt him. Now he is dead.",
-      "I have nothing left to lose. I have lost everything because of Jakob. I was not going to let him get away with it.",
+      "I have nothing left to lose. I have lost everything because of Jacob. I was not going to let him get away with it.",
     ];
 
     return (
@@ -122,7 +122,7 @@ export default function Arrest() {
     );
   } else if (slug === "alex") {
     arrestMessages = [
-      "I did not kill Jakob. I did not even know him. I was his bouncer friend. I was there for him.",
+      "I did not kill Jacob. I did not even know him. I was his bouncer friend. I was there for him.",
       "Before you ask, no, I did not kill Viktor either. I was not even there when they were killed. I was at home all night.",
       "I am a good person. I have a good heart. I would never hurt anyone. I am not a killer.",
       "You made a big mistake detective.",

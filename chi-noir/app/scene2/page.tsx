@@ -64,8 +64,8 @@ export default function Scene2() {
   ];
 
   let bodyMessages: string[] = [
-    "After looking at the body we can see that Jackob has died by hitting his head really hard on the nightstand, which caused a severe brain hemorrhage.",
-    "I am pretty sure that he is the man who was in the photograph we found in the previous crime scene, Viktor.",
+    "After looking at the body we can see that Viktor has died by hitting his head really hard on the nightstand, which caused a severe brain hemorrhage.",
+    "I am pretty sure that he is the man who was in the photograph we found in the previous crime scene, Jacob.",
     "There are also some bruises on his arms and legs, which suggests that he might have been involved in a struggle with the assailant.",
     "We found his diary in his room, and it seems like he has a relationship with the previous victim.",
     "He is married to Rebecca Bottom, can this be a love triangle gone wrong?",
