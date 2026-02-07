@@ -36,7 +36,7 @@ export default function MessageBox({
   return (
     <div
       style={{ zIndex: 5 }}
-      className="absolute bottom-1/6 left-1/2 transform -translate-x-1/2  text-white p-6 rounded-lg min-w-2xl max-w-5xl cursor-pointer"
+      className="absolute bottom-1/6 left-1/2 transform -translate-x-1/2  text-white p-6 rounded-lg min-w-2xl max-w-6xl cursor-pointer"
       onClick={handleClick}
     >
       <div className="relative z-20">
@@ -53,7 +53,7 @@ export default function MessageBox({
           <p className="text-sm text-gray-400 mt-2">Click to continue...</p>
         </div>
         <div
-          className={`transition-all flex flex-row justify-between gap-x-5 mt-5 duration-300 ${showActionButtons ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+          className={`transition-all flex flex-row justify-between gap-x-5 max-w-full mt-5 duration-300 ${showActionButtons ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         >
           {actionNames.map((name, index) => (
             <ActionButton
