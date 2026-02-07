@@ -185,7 +185,17 @@ export default function Ending() {
             married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
+            <button
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500"
+              onClick={async () => {
+                const body = document.querySelector("body");
+                body?.classList.add("pageTransition");
+                await delay(1000);
+                router.push("/arrest/zoe");
+                await delay(500);
+                body?.classList.remove("pageTransition");
+              }}
+            >
               Choose This Suspect
             </button>
             <button
@@ -235,7 +245,17 @@ export default function Ending() {
             married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
+            <button
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500"
+              onClick={async () => {
+                const body = document.querySelector("body");
+                body?.classList.add("pageTransition");
+                await delay(1000);
+                router.push("/arrest/rebecca");
+                await delay(500);
+                body?.classList.remove("pageTransition");
+              }}
+            >
               Choose This Suspect
             </button>
             <button
@@ -284,7 +304,17 @@ export default function Ending() {
             married={false}
           />
           <div className="flex flex-row gap-x-4 mt-4">
-            <button className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500">
+            <button
+              className="cursor-pointer mb-5 px-8 py-3 w-1/2 text-red-500 uppercase tracking-widest text-sm border border-red-500/40 rounded-md bg-black/40 backdrop-blur-md shadow-[0_0_8px_rgba(239,68,68,0.25)] transition-all duration-300 hover:border-red-500 hover:shadow-[0_0_18px_rgba(239,68,68,0.7)] hover:text-red-500"
+              onClick={async () => {
+                const body = document.querySelector("body");
+                body?.classList.add("pageTransition");
+                await delay(1000);
+                router.push("/arrest/alex");
+                await delay(500);
+                body?.classList.remove("pageTransition");
+              }}
+            >
               Choose This Suspect
             </button>
             <button

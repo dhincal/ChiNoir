@@ -9,18 +9,30 @@ import RebeccaUpper from "@/public/Ending/Characters/RebeccaBottomUpper.png";
 import AlexJamesArrest from "@/public/Ending/Arrest/AlexJamesArrest.png";
 import AlexJamesUpper from "@/public/Ending/Characters/AlexJamesUpper.png";
 
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import MessageBox from "@/components/MessageBox";
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export default function Arrest() {
   const params = useParams();
+  const router = useRouter();
   const { slug } = params;
 
   let arrestMessages: string[] = [];
   let arrestImage = null;
   let sceneActions: string[] = ["Go Home"];
-  let actionEvents: Function[] = [];
+  let actionEvents: Function[] = [
+    async () => {
+      const body = document.querySelector("body");
+      body?.classList.add("pageTransition");
+      await delay(1000);
+      router.push("/");
+      await delay(500);
+      body?.classList.remove("pageTransition");
+    },
+  ];
 
   if (slug === "john") {
     arrestMessages = [
