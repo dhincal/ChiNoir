@@ -3,13 +3,17 @@
 import { FILE } from "dns/promises";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useRef } from "react";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function HowToPlay() {
   const router = useRouter();
+  const audioRef = useRef<HTMLAudioElement>(null);
+
   return (
     <div className="relative max-w-2xl w-full bg-[#e8dcc2] text-zinc-900 p-10 rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.7)] mx-auto mt-20">
+      <audio ref={audioRef} src="/Music/FolderNoise.mp3" autoPlay />
       <div className="absolute -top-6 left-8 bg-[#d6c7a5] px-6 py-2 text-sm tracking-widest shadow-md">
         CASE FILE #001
       </div>

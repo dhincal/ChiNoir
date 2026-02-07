@@ -170,7 +170,7 @@ export default function Ending() {
           <CharInfoBox
             className="w-full"
             name="Zoe Smith"
-            description="Description of Zoe Smith"
+            description="Nurse at the local hospital, known for her dedication to her patients and her calm demeanor. She has no history of violence or criminal records. She is currently married and has one child. She is the head nurse at the hospital that Viktor Bottom frequently visits."
             occupancy="Nurse"
             gunLicense={true}
             height="165 cm"
