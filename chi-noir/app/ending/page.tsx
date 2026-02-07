@@ -80,11 +80,7 @@ export default function Ending() {
             alt="John Bummer Full"
             className="w-2/12"
           />
-          <Image
-            src={RebeccaBottomFull}
-            alt="Zoe Smith Full"
-            className="w-2/12"
-          />
+          <Image src={ZoeSmithFull} alt="Zoe Smith Full" className="w-2/12" />
           <Image
             src={RebeccaBottomFull}
             alt="Rebecca Bottom Full"

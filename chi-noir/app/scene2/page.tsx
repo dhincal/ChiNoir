@@ -51,7 +51,7 @@ export default function Scene2() {
   ];
 
   let sceneMessages: string[] = [
-    "Welcome back, Detective. This is the house of the victim, Jackob Bottom. He was found murdered here this morning.",
+    "Welcome back, Detective. This is the house of the victim, Viktor Bottom. He was found murdered here this morning.",
     "There is no sign of forced entry, which suggests that the perpetrator might have been someone he knows, or someone who has a key to the house.",
     "Feds think that this is a double homicide case, so we need to investigate the house quickly and find the perpetrator before they take the case from us. Again...",
     "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate.",
@@ -65,7 +65,7 @@ export default function Scene2() {
 
   let bodyMessages: string[] = [
     "After looking at the body we can see that Jackob has died by hitting his head really hard on the nightstand, which caused a severe brain hemorrhage.",
-    "I am pretty sure that he is the man who was in the photograph we found in the previous crime scene, the ginger man.",
+    "I am pretty sure that he is the man who was in the photograph we found in the previous crime scene, Viktor.",
     "There are also some bruises on his arms and legs, which suggests that he might have been involved in a struggle with the assailant.",
     "We found his diary in his room, and it seems like he has a relationship with the previous victim.",
     "He is married to Rebecca Bottom, can this be a love triangle gone wrong?",
@@ -92,7 +92,7 @@ export default function Scene2() {
   ];
 
   let bathroomMessages: string[] = [
-    "Bathroom is pretty clean, there is no sign of struggle or any other things that bats my eye.",
+    "In the Bathroom there is no sign of struggle or any other things that bats my eye.",
     "But we did found a pregnancy test in the trash can, and it is positive.",
     "I am not sure if we should trust the results, since it is a really cheap one, but it might still be useful information.",
   ];
@@ -118,7 +118,6 @@ export default function Scene2() {
 
   let kitchenMessages: string[] = [
     "In the kitchen, we can see harsh signs of struggle, there are broken dishes and overturned furniture.",
-    "There is no signs of any blood here, which suggests that the struggle might have happened in another room, and the perpetrator just threw the dishes to make it look like there was a struggle in the kitchen.",
     "We also found a really nice bottle of Scotch whiskey on the counter, and it is half empty, seems like the victim was drinking before the murder.",
     "Next to the Scotch Bottle we found a Pepsi Can, with a hint of lipstick on it. No one would say no to this fine bottle of Scotch.",
     "Unless they want to stay away from alcohol...",

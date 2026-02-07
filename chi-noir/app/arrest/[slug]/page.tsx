@@ -36,8 +36,8 @@ export default function Arrest() {
 
   if (slug === "john") {
     arrestMessages = [
-      "I have told you many times. I am innocent. I did not kill Jackob. I did not even know him.",
-      "I was at home all night. I have an alibi. You can check with my neighbors. They will tell you that I was at home.",
+      "I have told you many times. I am innocent. I did not kill Jacob or Viktor. I did not even know them.",
+      "I was at home all night. I left that kind of lifestyle back in the past.",
       "But it is too late isn't it? See you on the other side, Detective.",
     ];
     arrestImage = JohnBummerArrest;
@@ -65,9 +65,9 @@ export default function Arrest() {
     );
   } else if (slug === "zoe") {
     arrestMessages = [
-      "I have nothing to say to you. I am innocent. I did not kill Jackob. He only used to come by our hospital.",
-      "I was at the bar all night. I have an alibi. You can check with the bartender. He will tell you that I was at the bar.",
-      "But it is too late isn't it? See you on the other side, Detective.",
+      "I didn't do it. Jacob is a really old friend of mine. I would never hurt him.",
+      "He used to come to our hospital, I would make sure he gets the best care possible.",
+      "You got the wrong guy Detective. I am a doctor, not a killer. I have dedicated my life to saving people, not taking lives.",
     ];
     arrestImage = ZoeSmithArrest;
     return (
@@ -93,8 +93,10 @@ export default function Arrest() {
     );
   } else if (slug === "rebecca") {
     arrestMessages = [
-      "Okay Detective, you got me. I killed Jackob. But you will never understand why. You will never understand what he did to me. He deserved it. He deserved everything that is coming to him.",
-      "He has lied to me, to his own wife, I have lived my whole life for a lie.",
+      "Okay Detective, you got me. I killed Jakob. But you will never understand why.",
+      "He took my husband away from me. He is dead because of him. He is dead because of his lies.",
+      "I loved my husband, my dearest Viktor. I didn't want to hurt him. Now he is dead.",
+      "I have nothing left to lose. I have lost everything because of Jakob. I was not going to let him get away with it.",
     ];
 
     return (
@@ -120,9 +122,10 @@ export default function Arrest() {
     );
   } else if (slug === "alex") {
     arrestMessages = [
-      "I didn't mean to do it. It was an accident. Jackob was going to ruin everything. I had to stop him.",
-      "I was at the office all night. You can check with my assistant. She will tell you that I was working late.",
-      "But it is too late isn't it? See you on the other side, Detective.",
+      "I did not kill Jakob. I did not even know him. I was his bouncer friend. I was there for him.",
+      "Before you ask, no, I did not kill Viktor either. I was not even there when they were killed. I was at home all night.",
+      "I am a good person. I have a good heart. I would never hurt anyone. I am not a killer.",
+      "You made a big mistake detective.",
     ];
     arrestImage = AlexJamesArrest;
 

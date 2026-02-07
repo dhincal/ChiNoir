@@ -51,8 +51,8 @@ export default function Scene1() {
   ];
 
   let sceneMessages: string[] = [
-    "Welcome to Laselle Stop, Detective, the scene of the crime.",
-    "We have found out that the victim was a local bouncer named Jackob who works at Rex Lounge.",
+    "Welcome to La Selle Stop, Detective, the scene of the crime.",
+    "We have found out that the victim was a local bouncer named Jacob who works at Rex Lounge.",
     "He was found dead here under the staircase, with a gunshot wound to the chest.",
     "We do not have much time before the media arrives, so we need to be quick and gather as much evidence as possible.",
     "Let's start by examining the crime scene and collecting any clues we can find, let me know where would you like to investigate.",
@@ -61,9 +61,9 @@ export default function Scene1() {
   let sceneActions: string[] = ["Check Body", "Check Logs", "Check Railway"];
 
   let bodyMessages: string[] = [
-    "Upon examining the body, we can see that Jakob was shot at close range, with a small caliber handgun. The gunshot wound is consistent with a single shot fired from a distance of less than 2 feet.",
-    "Other than the signs of murder, we found a ginger man's photograph in his wallet, seems like a romantic interest.",
-    "We also found a tuft of brown hair on his clothes, this either might be from the perpetrator, or from a random woman in the club.",
+    "Upon examining the body, we can see that Jacob was shot at close range, with a small caliber handgun. The gunshot wound is consistent with a single shot fired from a distance of less than 2 feet.",
+    "Other than the signs of murder, we found a red haired man's photograph in his wallet, seems like a romantic interest.",
+    "We also found a tuft of brown hair on his clothes, this either might be from the perpetrator, or from a random woman who goes to the club he works at.",
   ];
   let bodyActions: string[] = ["Back to Scene"];
   let bodyActionEvents: Function[] = [
@@ -114,7 +114,7 @@ export default function Scene1() {
   let railwayMessages: string[] = [
     "After cheking the inside the railway, we found 9mm shell casings, which matches the caliber of the gunshot wound on the victim.",
     "Other than that, we found a receipt from Rex Lounge, the club where the victim works, for a purchase made at around 2:00 A.M., which is around the time of the murder.",
-    "Alos even though it serves alcohol this person did not order alcohol, just a regular Can of Pepsi.",
+    "Also even though it serves alcohol this person did not order alcohol, just a regular can of pepsi.",
   ];
   let railwayActions: string[] = ["Back to Scene"];
   let railwayActionEvents: Function[] = [
