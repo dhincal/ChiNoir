@@ -11,7 +11,7 @@ export default function Scene1() {
   let sceneMessages: string[] = [
     "Good evening, Detective. Apologies for calling you at this hour, but we have a situation that requires your expertise.",
     "We have a homicide case that just came in, and we need you to head to the crime scene immediately.",
-    "The crime scene is at La Selle Station, I will see you there.",
+    "The crime scene is at La Salle Station, I will see you there.",
   ];
 
   const router = useRouter();

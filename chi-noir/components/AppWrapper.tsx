@@ -22,7 +22,10 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
 
   return (
     <MusicProviderContext.Provider value={{ isMusicOn, toggleMusic }}>
-      <div onClick={toggleMusic}>
+      <div
+        onClick={toggleMusic}
+        className="absolute left-0 top-0 p-4 cursor-pointer z-50 w-4 h-4"
+      >
         {isMusicOn ? <Volume2></Volume2> : <VolumeX></VolumeX>}
       </div>
       {children}

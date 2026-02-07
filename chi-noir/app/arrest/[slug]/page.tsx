@@ -21,14 +21,15 @@ export default function Arrest() {
   const { slug } = params;
 
   let arrestMessages: string[] = [];
+  let successSlug = "fail";
   let arrestImage = null;
-  let sceneActions: string[] = ["Go Home"];
+  let sceneActions: string[] = ["End Case"];
   let actionEvents: Function[] = [
     async () => {
       const body = document.querySelector("body");
       body?.classList.add("pageTransition");
       await delay(1000);
-      router.push("/");
+      router.push(`/final/${successSlug}`);
       await delay(500);
       body?.classList.remove("pageTransition");
     },
@@ -97,6 +98,16 @@ export default function Arrest() {
       "He took my husband away from me. He is dead because of him. He is dead because of his lies.",
       "I loved my husband, my dearest Viktor. I didn't want to hurt him. Now he is dead.",
       "I have nothing left to lose. I have lost everything because of Jacob. I was not going to let him get away with it.",
+    ];
+    let actionEvents: Function[] = [
+      async () => {
+        const body = document.querySelector("body");
+        body?.classList.add("pageTransition");
+        await delay(1000);
+        router.push(`/final/success`);
+        await delay(500);
+        body?.classList.remove("pageTransition");
+      },
     ];
 
     return (

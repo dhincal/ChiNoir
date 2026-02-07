@@ -51,7 +51,7 @@ export default function Scene1() {
   ];
 
   let sceneMessages: string[] = [
-    "Welcome to La Selle Stop, Detective, the scene of the crime.",
+    "Welcome to La Salle Stop, Detective, the scene of the crime.",
     "We have found out that the victim was a local bouncer named Jacob who works at Rex Lounge.",
     "He was found dead here under the staircase, with a gunshot wound to the chest.",
     "We do not have much time before the media arrives, so we need to be quick and gather as much evidence as possible.",
