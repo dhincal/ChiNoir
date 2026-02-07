@@ -1,7 +1,7 @@
 "use client";
 
 import MessageBox from "@/components/MessageBox";
-import LaSelleStationImg from "@/public/Scene1/LaSelleStation.png";
+import LaSelleStationImg from "@/public/Scene1/Blur.png";
 import CheckLogsBg from "@/public/Scene1/CheckLogsBg.png";
 import CheckRailwayBg from "@/public/Scene1/CheckRailwayBg.png";
 import CheckBodyBg from "@/public/Scene1/CheckBodyBg.png";

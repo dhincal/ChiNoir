@@ -38,7 +38,7 @@ export default function MessageBox({
   return (
     <div
       style={{ zIndex: 5 }}
-      className="absolute bottom-1/6 left-1/2 transform -translate-x-1/2  text-white p-6 rounded-lg min-w-2xl max-w-6xl cursor-pointer select-none"
+      className="absolute bottom-1 left-1/2 transform -translate-x-1/2  text-white p-6 rounded-lg min-w-2xl max-w-6xl cursor-pointer select-none"
       onClick={handleClick}
     >
       <div className="relative z-20">
