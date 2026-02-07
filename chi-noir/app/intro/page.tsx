@@ -20,8 +20,13 @@ export default function Scene1() {
 
   let actionEvents: Function[] = [() => handleActionClick()];
 
-  function handleActionClick() {
+  async function handleActionClick() {
+    const body = document.querySelector("body");
+    body?.classList.add("pageTransition");
+    await delay(1000);
     router.push("/scene1");
+    await delay(500);
+    body?.classList.remove("pageTransition");
   }
 
   return (

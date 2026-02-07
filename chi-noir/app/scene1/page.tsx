@@ -139,7 +139,16 @@ export default function Scene1() {
     "Let's leave before media gets all up in our business.",
   ];
   let endSceneActions: string[] = ["Go Home"];
-  let endSceneActionEvents: Function[] = [() => router.push("/dayBreak")];
+  let endSceneActionEvents: Function[] = [
+    async () => {
+      const body = document.querySelector("body");
+      body?.classList.add("pageTransition");
+      await delay(1000);
+      router.push("/dayBreak");
+      await delay(500);
+      body?.classList.remove("pageTransition");
+    },
+  ];
 
   return (
     <div>
