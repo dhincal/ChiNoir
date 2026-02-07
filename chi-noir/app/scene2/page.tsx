@@ -141,7 +141,7 @@ export default function Scene2() {
     "Let's leave before media gets all up in our business.",
   ];
   let endSceneActions: string[] = ["Go Home"];
-  let endSceneActionEvents: Function[] = [() => router.push("/dayBreak")];
+  let endSceneActionEvents: Function[] = [() => router.push("/ending")];
 
   return (
     <div>
