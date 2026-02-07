@@ -9,6 +9,7 @@ export default function CharInfoBox({
   alcoholLevel,
   salary,
   pregnant,
+  married,
 }: {
   className?: string;
   name: string;
@@ -20,6 +21,7 @@ export default function CharInfoBox({
   alcoholLevel: string;
   salary: string;
   pregnant?: boolean;
+  married: boolean;
 }) {
   return (
     <div
@@ -51,6 +53,9 @@ export default function CharInfoBox({
             <strong>Pregnant:</strong> {pregnant ? "Yes" : "No"}
           </li>
         )}
+        <li>
+          <strong>Married:</strong> {married ? "Yes" : "No"}
+        </li>
       </ul>
     </div>
   );

@@ -123,6 +123,7 @@ export default function Ending() {
             weight="100 kg"
             alcoholLevel="High"
             salary="$0"
+            married={false}
           />
           <div className="flex flex-row gap-x-4 mt-4">
             <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
@@ -168,6 +169,7 @@ export default function Ending() {
             alcoholLevel="None"
             salary="$25,000/yr"
             pregnant={true}
+            married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
             <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
@@ -217,6 +219,7 @@ export default function Ending() {
             alcoholLevel="None"
             salary="$50,000/yr"
             pregnant={false}
+            married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
             <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
@@ -265,6 +268,7 @@ export default function Ending() {
             weight="100 kg"
             alcoholLevel="Low"
             salary="$20,000/yr"
+            married={true}
           />
           <div className="flex flex-row gap-x-4 mt-4">
             <button className="bg-red-900 text-white px-4 py-2 rounded-lg cursor-pointer hover:text-red-900 hover:bg-white transition duration-300">
